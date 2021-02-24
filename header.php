@@ -18,6 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script src="https://kit.fontawesome.com/3dee0e509d.js" crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -56,8 +57,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<i class="fas fa-bars menu-mobile"><!--<span class="navbar-toggler-icon"></span>--></i>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
@@ -75,6 +76,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
+				<!--
+                <i class="fas fa-bars menu-mobile">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown toggle-menu',
+						'menu_class'      => 'mobile-menu',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'depth'           => 2,
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				);
+				?>
+				</i>-->
 
 		
 			</div><!-- .container -->
@@ -83,3 +101,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+
+<script>
+	function changeMenu() {
+	const navbarToggler = document.querySelector('.navbar-toggler');
+	const menuMobile = document.querySelector('.menu-mobile');
+
+	navbarToggler.addEventListener('click', () => {
+		if(navbarToggler.classList.contains('collapsed')) {
+			if(menuMobile.classList.contains('fa-bars')) {
+			menuMobile.classList.remove('fa-bars');
+			menuMobile.classList.add('fa-times');
+			}
+		} else {
+			menuMobile.classList.remove('fa-times');
+			menuMobile.classList.add('fa-bars');
+		}
+	});
+}
+
+changeMenu();
+</script>

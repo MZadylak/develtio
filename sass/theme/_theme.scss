@@ -96,8 +96,17 @@
                 }
                }
            }
-       }
-   } 
+
+           .menu-mobile {
+               display: none;
+
+               .mobile-menu {
+                       display: none;
+                       transition: .4s;
+                   }
+           }
+        }
+    }
 }
 
 h1, h2, h3 {
@@ -334,7 +343,6 @@ section::after {
     }
 }
 
-
 @media (max-width: 768px) {
 .container {
     margin-top: 0 !important;
@@ -496,6 +504,93 @@ section::after {
         font-size: 20px;
     }
 }
-
 }
 
+@media (max-width: 375px) {
+    .container {
+        width: 310px;
+
+        .navbar-toggler {
+            position: fixed;
+            top: 12px;
+            left: 55%;
+            color: transparent;
+            border-color: transparent;
+
+            .menu-mobile {
+                display: block !important;
+                color: #0312A0;
+                font-size: 25px;
+        
+                .mobile-menu {
+                    display: block !important;
+                }
+            }
+        }
+
+        button::after {
+            display: none;
+        }
+    }
+
+    .home-banner {
+        height: 600px;
+        z-index: 1;
+
+        .contact-form {
+            h3 {
+                font-size: 14px !important;
+                margin: 12px 0 !important;
+            }
+        }
+
+        .transparent-bg {
+            height: 100px;
+            z-index: 1;
+
+            
+            h1 {
+                bottom: 55px;
+                font-size: 22px;
+            }
+
+            .desc {
+                bottom: 9px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    section {
+        top: -40px;
+        height: 350px;
+
+        .wrap {
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+
+            p:nth-of-type(2) {
+                display: none;
+            }
+
+            button {
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .wrapper {
+        .container {
+            width: unset;
+        }
+    }
+}
