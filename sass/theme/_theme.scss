@@ -1,0 +1,176 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+#wrapper-navbar {
+   #main-nav {
+       background-color: #fff;
+
+       .container {
+           margin-top: 10px;
+
+           .nav-logo {
+               .container {
+                   .row {
+                       .col-lg-11 {
+                           position: relative;
+
+                           .logo-top-1, .logo-top-2, .logo-bottom {
+                               position: absolute;
+                           }
+
+                           .logo-top-1 {
+                               right: 52px;
+                               top: -25px;
+                           }
+
+                           .logo-top-2 {
+                               right: 92px;
+                               top: -17px;
+                           }
+
+                           .logo-bottom {
+                               top: 30px;
+                               right: 10px;
+                               transform: scale(.9);
+                           }
+                       }
+                   }
+               }
+           }
+
+
+           #main-menu {
+               li {
+                   a {
+                       position: relative;
+                       font-family: 'Lato', sans-serif;
+                       font-size: 20px;
+                       color: #1C3E95;
+                       font-weight: 500;
+                       letter-spacing: -.2px;
+                       margin-top: 15px;
+                       transition: .4s;
+                   }
+
+                   a::after {
+                       position: absolute;
+                       content: '';
+                       bottom: 5px;
+                       left: 50%;
+                       width: 0%;
+                       height: 2px;
+                       background-color: #1C3E95;
+                       transform: translateX(-50%);
+                       transition: .4s;
+                   }
+
+                   a:hover::after {
+                       width: 65%;
+                }
+               }
+           }
+       }
+   } 
+}
+
+.home-banner {
+    position: relative;
+    width: 100%;
+    height: 732px;
+    background: url('../img/home-banner.jpg');
+    background-attachment: fixed;
+
+
+    .transparent-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 259px;
+        background: rgba(79.0, 102.0, 164.0, .9);
+    
+
+        h1 {
+            position: absolute;
+            bottom: 150px;
+            left: 22%;
+            font-size: 42px;
+            color: #FE7A22;
+        }
+
+        .desc {
+            position: absolute;
+            bottom: 750px;
+            left: 22.1%;
+            width: 24%;
+            font-size: 30px;
+            color: #fff;
+            line-height: 1;
+        }
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 400px;
+        height: 604px;
+        width: 489px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0 40px 0 41px;
+
+        h2 {
+            color: #1C3E95;
+            font-size: 20px;
+            margin: 39px 81px 27px 0;
+        }
+
+        input {
+            flex-basis: 48px;
+            margin-bottom: 13px;
+        }
+
+        input::placeholder {
+            padding-left: 16px;
+        }
+
+        .postalcode {
+            display: flex;
+            justify-content: space-between;
+
+            .city {
+                flex-basis: 61%;
+                height: 48px;
+            }
+
+            .code {
+                flex-basis: 36%;
+                height: 48px;
+                width: 100%;
+            }
+        }
+
+        .check-it {
+            display: flex;
+
+            .text {
+                margin: 0 4px 19px 14px;
+                font-size: 13px;
+            }
+        }
+
+        button {
+            align-self: center;
+            font-size: 17px;
+            padding: 13px 80px;
+            border: none;
+            border-radius: 10px;
+            background-color: #FE7A22;
+            color: #fff;
+        }
+    
+    }
+
+}
