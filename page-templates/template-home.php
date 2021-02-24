@@ -39,7 +39,7 @@ get_header();
         <h1>Ubezpieczenia majątkowe</h1>
         <h2>Co obejmują?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur dicta vero autem praesentium, dignissimos adipisci. Iste, modi eveniet quia fuga rerum voluptatum omnis explicabo provident accusamus laborum debitis quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorum eos numquam repellat, culpa obcaecati cupiditate. Accusantium officiis rerum ea beatae sapiente earum, voluptatem autem, quaerat nulla tenetur, nemo sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium vel nulla quasi consequuntur ea vero est, tempore facilis id aut dicta animi voluptatum quaerat sit mollitia obcaecati asperiores eveniet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorum eos numquam repellat, culpa obcaecati cupiditate. Accusantium officiis rerum ea beatae sapiente earum, voluptatem autem, quaerat nulla tenetur, nemo sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium vel nulla quasi consequuntur ea vero est, tempore facilis id aut dicta animi voluptatum quaerat sit mollitia obcaecati asperiores eveniet voluptatum quaerat sit mollitia obcaecati asperiores eveniet!</p>
         <button>Zamów ubezpieczenie</button>
     </div>
 </section>

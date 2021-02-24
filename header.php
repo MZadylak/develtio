@@ -43,10 +43,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="row">
 							<div class="col-lg-11">
 								<a href ="#">
-								<img class="logo-hero" src="<?php echo get_template_directory_uri(); ?>/img/logo-hero.png" alt="Logo - TwojeFinanse - Ubezpieczenia">
-								<img class="logo-top-1" src="<?php echo get_template_directory_uri(); ?>/img/logo-top-1.png" alt="Logo - TwojeFinanse - Ubezpieczenia">
-								<img class="logo-top-2" src="<?php echo get_template_directory_uri(); ?>/img/logo-top-2.png" alt="Logo - TwojeFinanse - Ubezpieczenia">
-								<img class="logo-bottom" src="<?php echo get_template_directory_uri(); ?>/img/logo-bottom.png" alt="Logo - TwojeFinanse - Ubezpieczenia">
+									<p><span>twoje</span><span>finanse</span></p>
+								<!--<img class="logo-hero" src="<?php echo get_template_directory_uri(); ?>/img/logo-hero.png" alt="Logo - TwojeFinanse - Ubezpieczenia">-->
+									<img class="logo-top-1" src="<?php echo get_template_directory_uri(); ?>/img/logo-top-1.png" alt="Logo - TwojeFinanse - Ubezpieczenia">
+									<img class="logo-top-2" src="<?php echo get_template_directory_uri(); ?>/img/logo-top-2.png" alt="Logo - TwojeFinanse - Ubezpieczenia">
+								<!--<img class="logo-bottom" src="<?php echo get_template_directory_uri(); ?>/img/logo-bottom.png" alt="Logo - TwojeFinanse - Ubezpieczenia">-->
+									<p>ubezpieczenia</p>
+
 								</a>
 							</div>
 						</div>

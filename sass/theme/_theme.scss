@@ -1,13 +1,17 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
 
 
 #wrapper-navbar {
+    display: flex;
+    justify-content: center;
+
    #main-nav {
        background-color: #fff;
 
        .container {
+           max-width: 1600px;
            margin-top: 10px;
 
            .nav-logo {
@@ -16,25 +20,44 @@
                        .col-lg-11 {
                            position: relative;
 
-                           .logo-top-1, .logo-top-2, .logo-bottom {
-                               position: absolute;
+                            p {
+                                font-family: 'Lato', sans-serif;
+                                color: #0312a0;
                            }
 
+                           p:nth-of-type(1) {
+                               bottom: -35px;
+                               right: 20px;
+                               font-size: 43px;
+
+                               span:nth-of-type(1) {
+                                   font-weight: 800;
+                               }
+
+                               span:nth-of-type(2){
+                                   font-weight: 300;
+                               }
+                           }
+
+                           p:nth-of-type(2) {
+                               position: absolute;
+                               font-size: 18px;
+                               top: 46px;
+                               right: -6px;
+                           }
+
+                           img {
+                               position: absolute;
+                           }
+                           
                            .logo-top-1 {
-                               right: 54px;
-                               top: -25px;
-                               z-index: 1;
+                               top: -10px;
+                               right: 40px;
                            }
 
                            .logo-top-2 {
-                               right: 93px;
-                               top: -17px;
-                           }
-
-                           .logo-bottom {
-                               top: 30px;
-                               right: 10px;
-                               transform: scale(.9);
+                               top: -2px;
+                               right: 78px;
                            }
                        }
                    }
@@ -47,7 +70,7 @@
                    a {
                        position: relative;
                        font-family: 'Lato', sans-serif;
-                       font-size: 20px;
+                       font-size: 24px;
                        color: #1C3E95;
                        font-weight: 500;
                        letter-spacing: -.2px;
@@ -127,25 +150,24 @@ button:hover::after {
         left: 0;
         right: 0;
         height: 259px;
-        background: rgba(79.0, 102.0, 164.0, .9);
-    
+        background: rgba(28,62,149, 0.75);   
 
         h1 {
             position: absolute;
-            bottom: 150px;
-            left: 22%;
-            font-size: 42px;
+            bottom: 145px;
+            left: 15%;
+            font-size: 52px;
             color: #FE7A22;
         }
 
         .desc {
             position: absolute;
-            bottom: 85px;
-            left: 22.1%;
-            width: 24%;
-            font-size: 28px;
+            bottom: 65px;
+            left: 15%;
+            width: 500px;
+            font-size: 30px;
             color: #fff;
-            line-height: 1.2;
+            line-height: 36px;
         }
     }
 
@@ -163,8 +185,8 @@ button:hover::after {
 
         h3 {
             color: #1C3E95;
-            margin: 39px 81px 27px 0;
-            font-size: 20px;
+            margin: 40px 0;
+            font-size: 24px;
         }
 
         input {
@@ -196,6 +218,7 @@ button:hover::after {
             display: flex;
 
             .text {
+                color: #161616;
                 margin: 0 4px 19px 14px;
                 font-size: 13px;
             }
@@ -221,7 +244,7 @@ section {
         position: absolute;
         top: 50px;
         left: 22%;
-        width: 40%;
+        width: 42%;
         z-index: 1;
 
         h1, h2 {
@@ -229,12 +252,16 @@ section {
         }
     
         h1 {
-            font-size: 52px;
+            font-size: 63px;
+        }
+
+        h2 {
+            font-size: 34px;
+            margin: 8px 0 24px 0;
         }
 
         p {
             font-size: 15px;
-            padding: 15px 0;
         }
 
         p:nth-of-type(1) {
@@ -246,11 +273,8 @@ section {
         }
 
         button {
-            margin-top: 30px;
-            padding: 20px 55px;
-            font-size: 17px;
-            background-color: #FE7A22;
-            border-radius: 15px;
+            margin-top: 52px;
+            padding: 15px 57px;
         }
     }
 
@@ -274,7 +298,8 @@ section::after {
     }
 
     h4 {
-        font-size: 19px;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
     ul {
@@ -283,11 +308,13 @@ section::after {
 
     li {
         list-style: none;
-        font-size: 14px;
+        font-size: 16px;
+        font-family: 'Lato';
+        font-weight: 400;
     }
 
     a {
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 700;
         text-decoration: none;
 
