@@ -265,3 +265,39 @@ section::after {
     height: 100%;
     background: rgb(255,255,255);
 }
+
+#wrapper-footer {
+    background-color: #1C3E95;
+
+    * {
+        color: #fff;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+
+        span {
+            color: #FE7A22;
+        }
+    }
+
+    li:hover {
+        color: #FE7A22;
+        cursor: pointer;
+    }
+}
