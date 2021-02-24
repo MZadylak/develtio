@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-				<i class="fas fa-bars menu-mobile"><!--<span class="navbar-toggler-icon"></span>--></i>
+				<i class="fas fa-bars menu-mobile"></i>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
