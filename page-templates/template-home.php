@@ -16,10 +16,10 @@ get_header();
 <div class="home-banner">
     <div class="transparent-bg">
     <h1>Ubezpieczenie majątkowe</h1>
-    <p class="desc">Skontaktuj się z nami i skorzystaj ze specjalnej oferty!</p>
+    <h2 class="desc">Skontaktuj się z nami i skorzystaj ze specjalnej oferty!</h2>
     </div>
     <div class="contact-form">
-        <h2>Podaj dane kontaktowe, a my przygotujemy najlepszą ofertę</h2>
+        <h3>Podaj dane kontaktowe, a my przygotujemy najlepszą ofertę</h3>
         <input type="text" class="name" placeholder="Imię i nazwisko">
         <input type="email" class="mail" placeholder="Adres e-mail">
         <input type="text" class="phone" placeholder="Nr telefonu">
