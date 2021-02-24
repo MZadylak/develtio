@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<div class="row">
 
-					<div class="col-lg-3 about">
+					<div class="col-lg-3 about col-sm-6 col-xs-12">
 						<h4>O nas</h4>
 						<ul>
 							<li>Strona główna</li>
@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</ul>
 					</div>
 					
-					<div class="col-lg-3 safety">
+					<div class="col-lg-3 safety col-sm-6 col-xs-12">
 						<h4>Ubezpieczenia</h4>
 						<ul>
 							<li>Ubezpieczenia mienia, nieruchomości</li>
@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<li>Zobacz pełną ofertę</li>
 						</ul>
 					</div>
-					<div class="col-lg-3 help">
+					<div class="col-lg-3 help col-sm-6 col-xs-12">
 						<h4>Pomoc</h4>
 						<ul>
 							<li>Oddziały/Kontakt</li>
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<li>Informacje Administracyjne</li>
 							<li>Polityka cookies</li>
 					</div>
-					<div class="col-lg-3 contact">
+					<div class="col-lg-3 contact col-sm-6 col-xs-12">
 						<h4>Infolinia</h4>
 						<a href="tel:+48223111234"><span>+48 22 311 1234</span></a>
 					</div>
